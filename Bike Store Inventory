@@ -1,0 +1,13 @@
+
+--create a bike store inventory 
+create table Bike_Store (ID integer, Item text, qty integer, location text, description text, price integer);
+
+insert into Bike_Store values
+(1, 'seat', 5, 'bin', 'large', 200),
+(2, 'pump', 3, 'stg', 'medium', 50);
+
+--display data by decriptoin that are large in size
+select * from bike_store where description = "large";
+
+--get the sum of qty column 
+select sum(qty) from bike_store
